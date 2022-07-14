@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #021d29;
+}
+
+p {
+  color: #0a9396;
+}
+
+h2 {
+  color: #94d2bd;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #94d2bd;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+a {
+  text-decoration: none;
+}
+
+.hovercard:hover {
+  transform: scale(1.02);
+  transition: 0.6s;
+  box-shadow: 10px 6px 10px 4px black;
+  opacity: 2;
+}
+
+#img {
+  width: 100%;
+}
+
+.main__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  margin: auto;
+  flex-direction: column;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.card .card-img-top {
+  opacity: 0.7;
+}
+.card .card-img-top:hover {
+  opacity: 2;
+}
+.card .card-body:hover {
+  opacity: 2;
+}
+.card .card-body .card-text {
+  font-size: 18px;
+  color: #dddddd;
+}
+.card .card-body .btn {
+  background-image: linear-gradient(180deg, #072324, #647e83);
+  border: none;
+  opacity: 0.7;
+}
+.card .card-body .btn:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+  box-shadow: 0px 1px 2px 3px #050c0c;
+  color: #dddddd;
+  opacity: 2;
+  font-weight: bold;
+}
+.card .card-body .card-title {
+  color: #dddddd;
+}
+
+.contacto {
+  list-style: none;
+  color: #E9D8A6;
+}
+
+footer h3:hover {
+  color: #E9D8A6;
+  transform: scale(1.02);
+  transition: 1s;
+}/*# sourceMappingURL=style.css.map */
