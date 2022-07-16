@@ -47,15 +47,11 @@ a {
   opacity: 2;
 }
 
-#img {
-  width: 100%;
-}
-
 .main__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 75%;
+  width: 90%;
   margin: auto;
   flex-direction: column;
 }
@@ -92,6 +88,12 @@ a {
 }
 .card .card-body .card-title {
   color: #dddddd;
+}
+
+.contacto-img {
+  width: 100%;
+  max-width: 500px;
+  align-items: center;
 }
 
 .contacto {

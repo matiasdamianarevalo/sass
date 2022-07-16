@@ -48,11 +48,6 @@ a{
     box-shadow: 10px 6px 10px 4px black;
     opacity: 2.0;
 }
-#img{
-    width: 100%;
-}
-
-
 
 //mixin//
 
@@ -64,7 +59,7 @@ a{
 
 .main__container{
     @include flex(flex,center,center);
-    width: 75%;
+    width: 90%;
     margin: auto;
     flex-direction: column;
 
@@ -106,6 +101,11 @@ a{
         }
     }        
     
+}
+.contacto-img{
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
 }
 .contacto{
     list-style: none;
