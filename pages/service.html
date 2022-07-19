@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bikestore</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Josefin+Sans:wght@100;400;700&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="shortcut icon" href="../img/favicon.png">
@@ -22,8 +25,9 @@
 						  Productos
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <li><a class="dropdown-item text-white-50" href="../pages/bicicletas.html">Bicicletas</a></li>
-						  <li><a class="dropdown-item text-white-50" href="../pages/accesoriosyrepuestos.html">Accesorios y repuestos</a></li>
+							<li><a class="dropdown-item text-white-50" href="../pages/montaña.html">Mountain bike</a></li>
+							<li><a class="dropdown-item text-white-50" href="../pages/ruta.html">Route bike</a></li>
+							<li><a class="dropdown-item text-white-50" href="../pages/accesoriosyrepuestos.html">Accesorios y repuestos</a></li>
 						</ul>
 					</li>
 					<li class="nav-menu-item">
@@ -36,56 +40,22 @@
             </div>
         </div>
     </nav>
-	<header class="header">
-		<div class="container-fluid">
-			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img src="../img/header.png" class="d-block w-100" alt="imagen promo bikestore">
-					</div>
-					<div class="carousel-item">
-						<img src="../img/caro1.jpg" class="d-block w-100" alt="imagen promo bikestore">
-					</div>
-					<div class="carousel-item">
-						<img src="../img/caro2.jpg" class="d-block w-100" alt="imagen promo bikestore">
-					</div>
-					<div class="carousel-item">
-						<img src="../img/caro3.jpg" class="d-block w-100" alt="imagen promo bikestore">
-					</div>
-					<div class="carousel-item">
-						<img src="../img/caro4.jpg" class="d-block w-100" alt="imagen promo bikestore">
-					</div>
-					<div class="carousel-item">
-						<img src="../img/caro5.jpg" class="d-block w-100" alt="imagen promo bikestore">
-					</div>
-					<div class="carousel-item">
-						<img src="../img/caro6.jpg" class="d-block w-100" alt="imagen promo bikestore">
-					</div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">anterior</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">siguiente</span>
-				</button>	
-			</div>
-		</div>
-	</header>
+	<div class="text-center">
+		<img src="../img/bannerservice.jpg" class="img-fluid" alt="banner service">
+	</div>
 	<main class="main">
 		<div class="container">
-			<div class="row text-center">
-				<div class="col">
-					<h2 class="p-3">NUESTRO TALLER</h2>
-					<p>En BIKESTORE trabaja un equipo de profesionales y amantes de la bicicleta.
+			<div class="main__container">
+				<div class="main__texts">
+					<h2 class="text-center">NUESTRO TALLER</h2>
+					<p class="parrafo-index">En BIKESTORE trabaja un equipo de profesionales y amantes de la bicicleta.
 					Seguimos un estricto protocolo de reparación y probamos a fondo todas las bicicletas que arreglamos.
 					Nuestro objetivo es comprometernos a que tengas tu bici lo antes posible.
 					Somos un taller de reparación de servicio completo. Desde reparar una rueda pinchada, hasta restaurar una bicicleta o una puesta a punto integral.
 					¡Las cotizaciones son GRATUITAS siempre!
 					Traé tu bicicleta y te recomendamos la reparación y mantenimiento que debe realizarse. Muchos servicios, como ruedas desinfladas e instalación de accesorios, se pueden realizar en el momento.</p>
-					<h2 class="p-3">¿Cómo funciona el servicio?</h2>
-					<p>Solicitá el servicio de retiro y entrega.
+					<h2 class="text-center p-3">¿Cómo funciona el servicio?</h2>
+					<p class="parrafo-index">Solicitá el servicio de retiro y entrega.
 					El transporte se pondrá en contacto para concretar día y hora de retiro.
 					Se retira la bicicleta en el domicilio indicado.
 					Una vez recibida en el taller se realiza un diagnóstico y un presupuesto.
@@ -95,28 +65,27 @@
 					Concretamos día y hora para la entrega.
 					Bicicleta entregada. ¡A pedalear!</p>
 				</div>
+				<a class="btn btn-secondary" href="../pages/contacto.html" role="button">Reserva tu turno</a>
 			</div>
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-sm-12 col-md-4 p-3">
-						<img class="rounded-3 p-1 w-100" src="../img/taller1.jpg" alt="personal mecanica de bikestore">
+						<img class="img-service" src="../img/taller1.jpg" alt="personal mecanica de bikestore">
 					</div>
 					<div class="col-sm-12 col-md-4 p-3">
-						<img class="rounded-3 p-1 w-100" src="../img/taller2.jpg" alt="personal mecanica de bikestore">
+						<img class="img-service" src="../img/taller2.jpg" alt="personal mecanica de bikestore">
 					</div>	
 			 	</div>
 			</div>
 		</div>
 	</main>
 	<footer class="container-fluid p-4">
-		<div>
-			<div class="row text-center">
-			  <div class="col">
-				<a href="https://www.facebook.com/"><h3>Facebook: bikestore</h3></a>
-			  </div>
-			  <div class="col">
-				<a href="https://www.instagram.com/"><h3>Instagram: bikestore</h3></a>
-			  </div>
+		<div class="row text-center">
+			<div class="footer">
+			<h4>Seguinos en</h4>
+			<a href="https://www.facebook.com/"><img class="logo-footer" src="../img/facebook.png" alt=""></a>
+			<a href="https://www.instagram.com/"><img class="logo-footer" src="../img/instagram.png" alt=""></a>
+			<a href="https://www.youtube.com/"><img class="logo-footer" src="../img/twiter.png" alt=""></a>
 			</div>
 		</div>	
 	</footer>

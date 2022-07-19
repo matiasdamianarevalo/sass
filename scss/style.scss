@@ -19,16 +19,25 @@ body{
     background-color: $blue-dark;
 }
 p{
-    color: $text-body;
+    color: map-get($map: $paleta, $key:"seis");
+}
+h1{
+    color: map-get($map: $paleta, $key:"dies");
+    font-weight: bold;
 }
 h2{
-    color: $secondaryColor;
+    color: map-get($map: $paleta, $key:"dies");
     font-weight: bold;
+    
 }
 h3{
     font-size: 20px;
     font-weight: bold;
-    color: $secondaryColor;
+    color: map-get($map: $paleta, $key:"dies");
+}
+h4{
+    color: map-get($map: $paleta, $key:"seis");
+    font-size: 15px;
 }
 nav{
     background-color: $text-back;
@@ -42,79 +51,104 @@ nav{
 a{
     text-decoration: none;
 }
-.hovercard:hover{
-    transform: scale(1.02);
-    transition: 0.6s;
-    box-shadow: 10px 6px 10px 4px black;
-    opacity: 2.0;
+.hovercard{
+    box-shadow: 4px 2px 10px 0px black;
 }
-
-//mixin//
-
+.hovercard:hover{
+    transform: scale(1.01);
+    transition: 0.4s;
+    box-shadow: 12px 6px 30px 2px black;
+    opacity: 1.0;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.banner{
+    opacity: 0.8;
+}
 @mixin flex ($flex,$justify,$align,){
     display: $flex;
     justify-content:$justify;
     align-items: $align;
 }
-
 .main__container{
     @include flex(flex,center,center);
     width: 90%;
     margin: auto;
     flex-direction: column;
-
 }
 .card{
     background-color: $text-back;
-    text-align: center;
-
+    @extend .flex;
     .card-img-top{
-        opacity: 0.7;
+        opacity: 0.8;
         &:hover{
-            opacity: 2.0;
+            opacity: 1.0;
         }
     }
     .card-body{
+        opacity: 0.8;
         &:hover{
-            opacity: 2.0;
+            opacity: 1.0;
         }
         .card-text{
+            font-weight: 100;
             font-size: 18px;
             color: map-get($map: $paleta, $key:"seis");
         }
         .btn{
             background-image: linear-gradient(180deg, #072324, #647e83);
             border: none;
-            opacity: 0.7;
             &:hover{
                 transform: scale(1.05);
-                transition: 0.3s;
                 box-shadow: 0px 1px 2px 3px #050c0c;
                 color: map-get($map: $paleta, $key:"seis");
-                opacity: 2.0;
-                font-weight: bold;
+                opacity: 1.0;
             }
-
         }
         .card-title{
             color: map-get($map: $paleta, $key:"seis");
+            font-weight: 700;
         }
-    }        
-    
+    }
+}
+.parrafo{
+    color: map-get($map: $paleta, $key:"seis");
+    font-style: italic;
+}
+.parrafo-index{
+    max-width: 1000px;
+    color: map-get($map: $paleta, $key:"seis");
+    font-style: normal;
+    font-size: 18px;
 }
 .contacto-img{
     width: 100%;
     max-width: 500px;
     align-items: center;
+    opacity: 0.9;
+}
+.img-service{
+    width: 100%;
+    box-shadow: 5px 3px 30px 4px black;
+    border-radius: 6px;
+    opacity: 0.9;
 }
 .contacto{
     list-style: none;
     color: $text-light;
 }
-footer{
-    h3:hover{
-        color: $text-light;
-        transform: scale(1.02);
-        transition: 1s;
-    }
+.footer{
+    @extend .flex;
+    flex-direction: row;
+    margin: 0px 10px;
+    width: 100%;
+}
+.logo-footer{
+    width: 40px;
+    margin: 2px 10px;
+    font-size: 18px;
 }
