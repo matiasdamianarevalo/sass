@@ -69,6 +69,11 @@ a{
 .banner{
     opacity: 0.8;
 }
+.carousel-item img{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+ }
 @mixin flex ($flex,$justify,$align,){
     display: $flex;
     justify-content:$justify;
@@ -79,6 +84,13 @@ a{
     width: 90%;
     margin: auto;
     flex-direction: column;
+
+}
+.video{
+    max-width: 560px;
+    max-height: 315px;
+    width: 100%;
+    height: 315px;
 }
 .card{
     background-color: $text-back;
