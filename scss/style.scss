@@ -39,13 +39,13 @@ h4{
     font-size: 15px;
 }
 nav{
-    background-color: $text-back;
+    background-color: $text-back2;
 }
 .dropdown-menu{
-    background-color: $text-back;
+    background-color: $text-back2;
 }
 .dropdown-item:hover{
-    background-color: $text-back;
+    background-color: $text-back2;
 }
 a{
     text-decoration: none;
@@ -136,12 +136,6 @@ a{
     font-style: normal;
     font-size: 18px;
 }
-.contacto-img{
-    width: 100%;
-    max-width: 500px;
-    align-items: center;
-    opacity: 0.9;
-}
 .img-service{
     width: 100%;
     box-shadow: 5px 3px 30px 4px black;
@@ -151,15 +145,22 @@ a{
 .contacto{
     list-style: none;
     color: $text-light;
+    padding: 0%;
+    .contacto-img{
+        width: 100%;
+        max-width: 500px;
+        align-items: center;
+        opacity: 0.9;
+    }
 }
 .footer{
     @extend .flex;
     flex-direction: row;
     margin: 0px 10px;
     width: 100%;
-}
-.logo-footer{
-    width: 40px;
-    margin: 2px 10px;
-    font-size: 18px;
+    .logo-footer{
+        width: 40px;
+        margin: 2px 10px;
+        font-size: 18px;
+    }
 }

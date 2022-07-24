@@ -36,15 +36,15 @@ h4 {
 }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .dropdown-menu {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .dropdown-item:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 a {
@@ -142,13 +142,6 @@ a {
   font-size: 18px;
 }
 
-.contacto-img {
-  width: 100%;
-  max-width: 500px;
-  align-items: center;
-  opacity: 0.9;
-}
-
 .img-service {
   width: 100%;
   box-shadow: 5px 3px 30px 4px black;
@@ -159,6 +152,13 @@ a {
 .contacto {
   list-style: none;
   color: #E9D8A6;
+  padding: 0%;
+}
+.contacto .contacto-img {
+  width: 100%;
+  max-width: 500px;
+  align-items: center;
+  opacity: 0.9;
 }
 
 .footer {
@@ -166,8 +166,7 @@ a {
   margin: 0px 10px;
   width: 100%;
 }
-
-.logo-footer {
+.footer .logo-footer {
   width: 40px;
   margin: 2px 10px;
   font-size: 18px;
