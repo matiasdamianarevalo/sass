@@ -65,6 +65,10 @@ a{
     align-items: center;
     text-align: center;
 }
+.logo{
+    margin: 5%;
+    width: 35px;
+}
 .banner{
     opacity: 0.8;
 }
@@ -92,21 +96,22 @@ a{
     height: 315px;
 }
 .card{
+    filter: brightness(110%);
     background-color: $text-back;
     @extend .flex;
-    .card-img-top{
-        opacity: 0.8;
-        &:hover{
-            opacity: 1.0;
-        }
+    opacity: 0.8;
+    &:hover{
+        opacity: 1.0;
     }
+
     .card-body{
         opacity: 0.8;
         &:hover{
             opacity: 1.0;
         }
         .card-text{
-            font-weight: 100;
+            font-style: italic;
+            font-weight: lighter;
             font-size: 18px;
             color: map-get($map: $paleta, $key:"seis");
         }
